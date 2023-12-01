@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="FAVICON.jpeg">
+
+<link rel="stylesheet" href="https://cdn-teams-slug.flaticon.com/google.jpg?family=material-icons">
+
+<title>SIGN UP</title>
+<!-- </*--------------------------STYLING OF SIGN UP CODE-------------------------------------*/> -->
+
+<style>
+
+html{
+	scroll-behavior: smooth;
+}
+
+body
+{
+background-image:url("/image/q2.jpeg");
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+#signupbox{width:790px;
+height:640px;
+background-color:whitesmoke;
+color:white;
+/* border:6px solid rgb(192, 5, 5); */
+box-sizing:border-box;
+padding:5px 20px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border: 3px solid rgb(16, 129, 194);
+}
+
+
+#sign h1{margin:0px;
+padding:0px;
+text-align:center;
+font-size:45px;
+/* background-color:red; */
+/* opacity:0.8; */
+color: rgb(179, 9, 9);
+height:60px;
+width:100%;
+font-size:80px
+
+}
+
+.name{margin:0px;
+padding:20px 0px;
+font-size:25px;
+text-align:cente;
+color: black;
+}
+
+
+.submit
+{
+margin-top:18px;
+margin-right:95%;
+margin-left:13%;
+height:40px;
+width:90px;
+border:0px solid black;
+border-radius: 30px;
+background-color:rgb(27, 27, 246);
+color:white;
+font-size:20px;
+
+}
+
+.submit:hover{background-color:blue;
+color:white;
+}
+
+
+#Male
+{
+margin-left:80px;
+
+}
+label{font-size:20px;}
+input{height:20px}
+
+#a1{text-decoration:non;
+bottom: unset;
+position:relative; left:220px; top:1px;
+/* //background-color: blue; */
+}
+
+#a1:hover{color:red;}
+
+p{margin:0%;
+text-align:left;}
+
+#google a{text-decoration:none;
+height:5px;
+font-size:21px;
+padding-left:10%;
+color:grey;
+}
+
+#google{height:40px;
+width:96%;
+background-color:white;
+text-align:center;
+/* padding-top:1px;
+padding-left:10px; */
+text-size-adjust: small;
+/* box-sizing: 10; */
+}
+#p1{
+margin-top:10px;
+font-size:20px;
+text-align:center;
+}
+
+#p2{
+margin-top:10px;
+font-size:20px;
+text-align:center;
+}
+
+
+
+
+
+</style>
+</head>
+<!-- </*--------------------------------MAIN BODY OF SIGN UP CODE-------------------------------------*/> -->
+<body>
+<div id="signupbox">
+
+<div id="sign">
+<h1>Quora</h1>
+</div> 
+<br>
+<h3 style="color: rgb(106, 100, 100); text-align: center;">A place to share knowledge and better understand the world</h5>
+<br>
+<br>
+<form action="index.html">
+    
+    <div>
+	 
+    <label class="name" for="Email">Email address&nbsp;<br>
+	<input class="Emailaddress" type="email" name="Email" placeholder="Enter Email" style="width:55%" required><br><br>
+	<!-- <label class="name" for="MobileNo.">Mobile No. -->
+	<label class="name" for="ComfirmPassword">Password<br>
+	<input class="Password" type="password" name="Password"  placeholder="Enter Password " style="width:55%"required>
+	
+	<br>
+	<div id="submit">
+	<a href="" id="a1"><button  onclick="message();" type="submit" class="submit">Login</button></a>
+	</div>
+
+	<a href="reset.html"><p id="p1" style="font-size:22px;">Forgot password?</p></a>
+	
+	<p id="or" style="text-align: center;">____________________<b>or</b>____________________</p><br>
+
+	<button type="submit" id="google">
+    <a href="">Continue with Google</a>
+	<i class="material-icons">cloud</i>
+    </button>
+	<br>
+	<br>
+    <a href="signup.html"><p id="p2">Sign up with email</p></a>
+	</div>
+	<br>
+</form>
+
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale="1.0">
+<link rel="shortcut icon" href="favicon.jpeg">
+
+<title>Reset Password</title>
+</*========================================================CSS STYLING OF RESET PASSWORD CODE==============================================================*/>
+<style>
+
+    html{
+        scroll-behavior: smooth;
+    }
+*{margin:0px;
+padding:0px;
+}
+body{
+margin:0px;
+padding:0px;
+background-image:url("/image/reset.png");
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+#reset{height:400px;
+width:500px;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+position:absolute;
+background-color:whitesmoke;
+padding:40px 20px;
+border:4px solid black;
+border-radius:2%;
+}
+.para{height:55px;
+width:70%;
+text-align:center;
+position:absolute;
+background-color:lightblue;
+color:green;
+opacity:1.0;
+box-sizing:border-box;
+border-radius:3%;
+border:3px solid lightblue;
+left:65px;
+padding-top:5px
+}
+h1{
+text-align:center;
+font-family:Copperplate Gothic Light;
+}
+#reset label{font-size:20px;
+font-weight:bold;
+/* font-family:; */
+}
+.submit{
+height:30px;
+width:50%;
+background-color:whitesmoke;
+
+color:black;
+margin-left:23%;
+font-weight:bold;
+}
+.submit:hover{
+color:blue;
+
+}
+input{height:20px;
+font-size:15px
+}
+
+#email{
+    text-align: center;
+}
+
+</style>
+</head>
+</*========================================================MAIN BODY OF RESET PASSWORD CODE================================================================*/>
+<body>
+<form action="main.html">
+<div id="reset">
+
+    <h1>RESET PASSWORD</h1>
+    <br>
+    <p style="text-align: center;" style="font-size: 30;">Please enter your email to reset your password</p>
+    <br>
+
+<label class="name" for="Email">Your Email&nbsp;
+<input class"Emailaddress" type="email" name="Email" placeholder="Enter Email" style="width:65%"><br>
+
+
+
+<br>
+<div class="para">
+<p>Please create a new password that<p>you don't use on any other site</p></p>
+</div>
+<br><br><br><br>
+<div class="new">
+<label for="reset password">NEW PASSWORD
+<input type="password" name="reset password" placeholder="Create New Password" style="width:100%" required>
+</div>
+<br><br>
+<div class="confirm">
+<label for="confirm">CONFIRM PASSWORD
+<input type="password" name="confirm" placeholder="Confirm your Password" style="width:100%" required >
+</div>
+<br>
+<a href="main.html"><button onclick="reset1();" type="submit" class="submit">RESET MY PASSWORD</button></a>
+</div>
+</form>
+<script src="./reset.js"></script>
+</body>
+</html>
